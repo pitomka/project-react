@@ -1,0 +1,126 @@
+main {
+    padding-top: 30px;
+}
+
+.product {
+    padding-bottom: 50px;
+}
+
+.main__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1;
+    padding-bottom: 50px;
+}
+
+.main__title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.main__subtitle {
+    font-size: 2rem;
+}
+
+.main__product {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+}
+
+.product__content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 10px;
+    align-items: center;
+    transition: .2s;
+}
+
+.product__content:hover {
+    position: relative;
+    transform: scale(1.02);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.product__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.promo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.promo__information {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    line-height: 1.1;
+    column-gap: 50px;
+}
+
+.information__content {
+    margin-bottom: 40px;
+}
+
+.content__title {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+}
+
+.content__promo-title {
+    width: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.content__text {
+    font-size: 1.2rem;
+    width: 300px;
+}
+
+.promo__img {
+    width: 350px;
+}
+
+@media (max-width: 2000px) {
+    .main__product {
+        grid-template-columns: repeat(5, 350px);
+    }
+}
+
+@media (max-width: 1600px) {
+    .main__product {
+        grid-template-columns: repeat(4, 350px);
+    }
+}
+
+@media (max-width: 1366px) {
+    .main__product {
+        grid-template-columns: repeat(4, 300px);
+    }
+}
+@media (max-width: 1024px) {
+    .main__product {
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+@media (max-width: 800px) {
+    .main__product {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
